@@ -1,6 +1,8 @@
 :root {
   --branding-color: #6c63ff;
   --secondary-color: #f9f7fe;
+  --about-primary-color: #9a000f;
+  --about-secondary-color: #efe6de;
   --heading-font-family: "playfair display", serif;
   --default-font-family: "Poppins", sans-serif;
 }
@@ -11,8 +13,7 @@
   font-size: 36px;
   color: #272142;
 }
-.hero h1,
-.about-section h1 {
+.hero h1 {
   font-family: var(--heading-font-family);
   font-weight: bold;
   font-size: 96px;
@@ -31,8 +32,7 @@
   padding: 160px 20px;
 }
 
-.hero .btn-branding,
-.about-section .btn-branding {
+.hero .btn-branding {
   background-color: var(--branding-color);
   color: white;
   border-radius: 4px;
@@ -66,11 +66,34 @@ p {
   line-height: 1.5;
 }
 
+.about-section {
+  background-color: var(--about-secondary-color);
+  padding: 80px;
+}
+
+.about-section h1 {
+  font-family: var(--heading-font-family);
+  font-weight: bold;
+  font-size: 96px;
+  color: var(--about-primary-color);
+}
+
 .about-section h2 {
   font-family: var(--heading-font-family);
   font-weight: bold;
   line-height: 2;
   font-size: 18px;
+  color: #5e1803;
+  opacity: 0.8;
+}
+
+.about-section .btn-branding {
+  color: var(--about-secondary-color);
+  background-color: var(--about-primary-color);
+  border-radius: 4px;
+  font-size: 18px;
+  padding: 15px 30px;
+  line-height: 27px;
 }
 
 @media (max-width: 960px) {

@@ -175,6 +175,24 @@ footer .contact-box p {
   margin: 0;
 }
 
+footer h4 {
+  font-family: var(--heading-font-family);
+  color: black;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+
+footer .btn-branding {
+  background-color: var(--branding-color);
+  color: white;
+  border-radius: 4px;
+  font-size: 18px;
+  padding: 15px 30px;
+  line-height: 27px;
+}
+
 footer .email-link {
   text-decoration: none;
   color: black;

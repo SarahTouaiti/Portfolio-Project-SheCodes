@@ -7,6 +7,10 @@
   --default-font-family: "Poppins", sans-serif;
 }
 
+body {
+  font-family: var(--default-font-family);
+}
+
 .hero p {
   font-family: var(--default-font-family);
   font-weight: bold;
@@ -125,6 +129,36 @@ p {
 
 .content {
   margin: 30px;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  margin-left: 15px;
+}
+
+nav a {
+  line-height: 60px;
+  text-decoration: none;
+  color: black;
+}
+
+nav a:hover,
+.active {
+  color: var(--branding-color);
+}
+
+.about-navbar a {
+  color: var(--about-primary-color);
+}
+
+.about-navbar a:hover,
+.about-navbar a.about-active {
+  color: #84592b;
 }
 
 @media (max-width: 960px) {

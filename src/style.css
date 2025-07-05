@@ -229,6 +229,10 @@ footer .social-links a:hover {
   background: var(--branding-color);
 }
 
+footer .email-link:hover {
+  color: var(--branding-color);
+}
+
 footer .about-contact .email-link:hover {
   color: var(--about-primary-color);
 }

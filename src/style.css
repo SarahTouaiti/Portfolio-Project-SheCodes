@@ -91,7 +91,8 @@ p {
   opacity: 0.8;
 }
 
-.about-section .btn-branding {
+.about-section .btn-branding,
+footer .about-contact-box .btn-branding {
   color: var(--about-secondary-color);
   background-color: var(--about-primary-color);
   border-radius: 4px;
@@ -158,7 +159,7 @@ nav a:hover,
 
 .about-navbar a:hover,
 .about-navbar a.about-active {
-  color: #84592b;
+  color: #5e1803;
 }
 
 footer {
@@ -171,18 +172,31 @@ footer .contact-box {
   border-radius: 10px;
 }
 
-footer .contact-box p {
+footer .about-contact-box {
+  padding: 30px 120px;
+  border-radius: 10px;
+}
+
+footer .contact-box p,
+footer .about-contact-box {
   margin: 0;
 }
 
 footer h4 {
   font-family: var(--heading-font-family);
-  color: black;
   font-weight: bold;
   margin-top: 0px;
   margin-bottom: 8px;
   line-height: 1.2;
   font-size: 48px;
+}
+
+footer .contact-box h4 {
+  color: black;
+}
+
+footer .about-contact-box h4 {
+  color: var(--about-primary-color);
 }
 
 footer .btn-branding {
@@ -200,10 +214,6 @@ footer .email-link {
   font-size: 24px;
 }
 
-footer .email-link:hover {
-  color: var(--branding-color);
-}
-
 footer .social-links a {
   margin: 0 20px;
   color: var(--branding-color);
@@ -217,6 +227,20 @@ footer .social-links a {
 footer .social-links a:hover {
   color: white;
   background: var(--branding-color);
+}
+
+footer .about-contact .email-link:hover {
+  color: var(--about-primary-color);
+}
+
+footer .about-contact .social-links a {
+  background-color: var(--about-secondary-color);
+  color: var(--about-primary-color);
+}
+
+footer .about-contact .social-links a:hover {
+  color: var(--about-secondary-color);
+  background-color: var(--about-primary-color);
 }
 
 @media (max-width: 960px) {
